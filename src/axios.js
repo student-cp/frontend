@@ -37,7 +37,7 @@ api.interceptors.response.use(
         }
 
         const response = await axios.post(
-          "https://rms-z8vm.onrender.com/api/auth/refresh",
+          `${import.meta.env.VITE_API_URL}/api/auth/refresh`,
           { refreshToken }
         );
 
